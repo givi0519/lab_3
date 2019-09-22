@@ -12,11 +12,11 @@ echo "Enter a file name: "
 read fileName
 echo "Enter a regular expression: "
 read regex
-#this will be for the count of emails
+#this will be for the count of emails regex = @
 grep -c $regex $fileName
 echo "Enter a new regular expression: "
 read regex2
-#this will be for the 303 area code
+#this will be for the 303 area code regex2 = 303
 grep -o $regex2 $fileName
 #this will write the emails to the file
 grep "@geocities.com" $fileName >> email_results.txt
