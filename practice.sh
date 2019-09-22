@@ -13,3 +13,4 @@ echo "The product is: $prod"
 echo "File Name: $0"
 echo "Command Line Argument 1: $1"
 echo "Command Line Argument 2: $2"
+grep $1 $2
